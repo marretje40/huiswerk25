@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Bootstrap-CSS -->
+            <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous">
+            <style type="text/css">
+                body{
+                    font-family: 'Lucida Sans';
+                    color: midnightblue;
+                    background-color: lightgoldenrodyellow;
+                }
+                footer{
+                    text-align: center;
+                    height: 200px;
+                }
+            </style>
+                <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+                </script>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                    $("#knop").click(function() {
+                    var naam =$("#naam").val();
+                    var emailadres =$("#emailadres").val(); 
+                    var bericht =$("#bericht").val();    
+                    window.alert("Uw naam is "+ naam + ", uw emailadres is " +emailadres + " en dit is uw bericht " + bericht);
+                    });
+                    });
+                </script>
+            <title>Huiswerkopdracht 25</title>
+        </head>
+        <body>
+            <div class="container-sm">
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Naam</label>
+                <input type="text" class="form-control" id="naam">
+              </div>
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Emailadres</label>
+                <input type="email" class="form-control" id="emailadres">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Bericht</label>
+                <textarea class="form-control" id="bericht" rows="5"></textarea>
+              </div>
+              <input id="knop" class="btn btn-primary" type="button"
+                value="Samenvatting">
+              </div>
+            <footer>© 2023 Marina Weststrate· Alle rechten voorbehouden. </footer>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+                crossorigin="anonymous">
+            </script> 
+        </body>
+    </html>
+   
